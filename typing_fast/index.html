@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing practice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <button id="level-btn" class="level-btn">
+        <i class="fa-solid fa-gear"></i> 
+    </button>
+    <div class="setting" id="setting">
+        <form action="" id="level-form">
+            <label for="">level : </label>
+            <select name="" id="level">
+                <option value="easy">easy</option>
+                <option value="normal">normal</option>
+                <option value="hard">hard</option>
+            </select>
+        </form>
+    </div>
+    <div class="container">
+        <h2>Speed typing </h2>
+        <!-- <small>practice typing for everyone</small> -->
+        <h1 id="word" class="word">public</h1>
+        <input type="text" id="text" autocomplete="off" placeholder="input the word">
+        <p class="time-container">
+            time
+            <span id="time">15</span>sec
+        </p>
+        <p class="score-container">
+            <span id="score">0</span> scores
+        </p>
+        <div class="gameover-container" id="gameover-container">
+
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

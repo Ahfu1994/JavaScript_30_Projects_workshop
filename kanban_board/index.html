@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="main-title">แผนผังการทำงาน</h1>
+    <div class="drag-container">
+        <ul class="drag-list">
+            <!-- category 1 -->
+            <li class="drag-column backlog-column">
+                <span class="header"> 
+                    <h1>งานค้าง</h1>
+                </span>
+                <div id="backlog-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="backlog-list">
+                        <li class="drag-item" draggable="true">ออกแบบ</li>
+                        <li class="drag-item" draggable="true">ส่งงาน</li>
+                        <li class="drag-item" draggable="true">เสนองบประมาณ</li>
+                    </ul>
+                </div>
+            </li>
+            <!-- category 2 -->
+            <li class="drag-column progress-column">
+                <span class="header"> 
+                    <h1>ดำเนินการ</h1>
+
+                </span>
+                <div id="progress-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="progress-list">
+                        <li class="drag-item" draggable="true">ออกแบบ logo</li>
+                        <li class="drag-item" draggable="true">ตัดต่อ</li>
+
+                    </ul>
+                </div>
+            </li>
+            <!-- category 3 -->
+            <li class="drag-column complete-column">
+                <span class="header"> 
+                    <h1>เสร็จสมบนูณ์</h1>
+                </span>
+                <div id="complete-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="complete-list">
+                        <li class="drag-item" draggable="true">ออกแบบ</li>
+                        <li class="drag-item" draggable="true">ส่งงาน</li>
+                        <li class="drag-item" draggable="true">เสนองบประมาณ</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drag-column reject-column">
+                <span class="header"> 
+                    <h1>ไม่ผ่าน</h1>
+                </span>
+                <div id="reject-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="reject-list">
+                        <li class="drag-item" draggable="true">ออกแบบ</li>
+                        <li class="drag-item" draggable="true">ส่งงาน</li>
+                        <li class="drag-item" draggable="true">เสนองบประมาณ</li>
+                    </ul>
+                </div>
+            </li>
+
+
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

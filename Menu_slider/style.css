@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    --primary-color: #0D4C92;
+    --secondary-color: red;
+    --modal-delay: 0.5s;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    /* padding: 0; */
+}
+
+nav {
+    background-color: var(--primary-color);
+    border-right: 2px solid rgba(200, 200, 200, 0.2);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    z-index: 100;
+    transform: translateX(-100%);
+}
+
+nav .logo {
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav .logo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    border-bottom: 2px solid rgba(200, 200, 200, 0.2);
+    padding: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 130%;
+    position: relative;
+    text-align: center;
+    padding: 40px 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+heaer p {
+    margin: 30px;
+}
+
+button,
+input[type='submit'] {
+    background-color: var(--secondary-color);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.toggle {
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.create-account {
+    padding: 12px 30px;
+}
+
+.container {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+    background-color: #59C1BD;
+}
+
+body.show-nav {
+    transform: translateX(200px);
+}
+
+body {
+    transition: transform 0.3s ease;
+}
+
+.container-develope-tools ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-develope-tools ul li {
+    list-style-type: none;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.container-develope-tools ul li a {
+    text-decoration: none;
+}
+
+.container-develope-tools ul li a.java:hover {
+    color: gray;
+}
+
+.container-develope-tools ul li a.php:hover {
+    color: #0E86D4;
+}
+
+.container-develope-tools ul li a.html:hover {
+    color: #f63f03;
+}
+
+.container-develope-tools ul li a.css:hover {
+    color: #0000FF;
+}
+
+.container-develope-tools ul li a.javascript:hover {
+    color: #f1d403;
+}
+
+.modal-container {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 400px;
+}
+
+.modal-container.show-modal {
+    display: block;
+}
+
+.modal {
+    animation: modalOpen;
+    animation-duration: var(--modal-delay);
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    padding: 15px;
+    color: #fff;
+}
+
+.modal-header h3 {
+    margin: 0;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.modal-form div {
+    margin: 10px 0;
+}
+
+.modal-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-form .form-input {
+    padding: 8px;
+    width: 100%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    font-size: 25px;
+}
+
+@keyframes modalOpen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0D4C92;
+    color: #fff;
+}
+
+.contact h1 {
+    margin: 5px 5px 0 0;
+}
+
+.contact ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container-practices h2 {
+    margin: 5px 5px 0 0;
+    color: #fff;
+}
+
+.container-practices ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.container-practices ul li a {
+    text-decoration: none;
+    color: #f1d403;
+}
+
+.container-practices ul li a:hover {
+    color: #f63f03;
+}

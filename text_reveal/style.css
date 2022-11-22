@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400&family=Roboto&display=swap');
+* {
+    font-family: 'Kanit', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+img {
+    width: 700px;
+    max-width: 100%;
+}
+
+.text {
+    opacity: 0.3;
+    transform: translateY(15px);
+    transition: 0.5s all ease;
+}
+
+.text.show-reveal {
+    opacity: 1;
+    transform: translateY(0px);
+}
